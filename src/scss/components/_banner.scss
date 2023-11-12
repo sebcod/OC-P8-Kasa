@@ -1,0 +1,25 @@
+.banner {
+    position: relative;
+
+    .bannerBg {
+        border-radius: 1.5rem;
+        height: 14rem;
+        width: 100%;
+        background-image: url("./imgs/IMG_Home.jpg");
+        background-position: center;
+        background-size: cover;
+
+        filter: brightness(70%);
+    }
+
+    h2 {
+        width: max-content;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color_text_white;
+        font-size: 3rem;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,11 @@
+// import google fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+// variables fonts
+$Font_logo_and_title: 'Shrikhand', serif;
+$Font_text: 'Inter', sans-serif;
+
+* {
+    font-family: $Font_text;
+    color: $color_Kasa;
+}

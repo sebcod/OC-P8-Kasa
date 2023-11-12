@@ -1,0 +1,15 @@
+@import "./themes/themes";
+
+@import "./base/reset";
+@import "./base/typograpfy";
+
+@import "./layouts/header/header";
+@import "./layouts/header/navbar";
+@import "./layouts/body";
+@import "./layouts/footer/footer";
+
+@import "./pages/home/home";
+@import "./pages/home/gallery";
+@import "./pages/home/cardRent";
+
+@import "./components/banner";

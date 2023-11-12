@@ -1,0 +1,15 @@
+.footer {
+    background-color: $color_bg_footer;
+    height: 13rem;
+    padding-top: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        color: $color_text_white;
+    }
+}

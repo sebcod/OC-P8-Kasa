@@ -1,11 +1,25 @@
 //import React from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
         <nav className="navbar">
-            <Link to={"/"}>Accueil</Link>
-            <Link to={"/About"}>About</Link>
+            <NavLink
+                to={"/"}
+                style={({ isActive }) =>
+                    isActive ? { textDecoration: "underline" } : undefined
+                }
+            >
+                Accueil
+            </NavLink>
+            <NavLink
+                to={"/About"}
+                style={({ isActive }) =>
+                    isActive ? { textDecoration: "underline" } : undefined
+                }
+            >
+                About
+            </NavLink>
         </nav>
     );
 };

@@ -3,4 +3,9 @@
     display: flex;
     gap: 3rem;
     font-size: 1.5rem;
+    color: $color_Kasa;
+}
+
+.navbarLinkActive {
+    text-decoration: underline;
 }

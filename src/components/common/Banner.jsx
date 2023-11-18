@@ -1,9 +1,16 @@
+import PropTypes from "prop-types";
 
-const Banner = () => {
+const Banner = ({ fromPage }) => {
+
+    Banner.propTypes = {
+        fromPage: PropTypes.string,
+    }
+
     return (
         <div className="banner">
-            <div className="bannerBg"></div>
-            <h2>Chez vous, partout et ailleurs</h2>
+            <div className={fromPage === "home" ? "bannerBgHome" : "bannerBgAbout"}></div>
+            {fromPage === "home" && <h2>Chez vous, partout et ailleurs</h2>}
+
         </div>
     );
 };

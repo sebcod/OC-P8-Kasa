@@ -3,8 +3,6 @@ import Home from "./components/pages/Home";
 import NotFound from "./components/pages/NotFound";
 import DetailsRent from "./components/pages/DetailsRent";
 import About from "./components/pages/About";
-
-import Navbar from "./components/layouts/header/Navbar";
 import Footer from "./components/layouts/footer/Footer";
 import Header from "./components/layouts/header/Header";
 //import { useState } from 'react'

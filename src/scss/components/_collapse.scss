@@ -1,0 +1,49 @@
+.collapse {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 64rem;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: margin-bottom 0.5s ease;
+        padding: 0.6rem 1.25rem 0.6rem 1.25rem;
+        background-color: #ff6060;
+        border-radius: 5px;
+
+        h2 {
+            color: white;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 500;
+        }
+    }
+}
+
+
+.arrowRotate {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease;
+}
+
+.arrow {
+    transition: transform 0.5s ease;
+}
+
+.content {
+    width: 100%;
+    padding: 1.25rem;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    color: #ff6060;
+    background-color: #f6f6f6;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+}

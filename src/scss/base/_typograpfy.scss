@@ -5,7 +5,10 @@
 $Font_logo_and_title: 'Shrikhand', serif;
 $Font_text: 'Inter', sans-serif;
 
-* {
+h1,
+h2,
+h3,
+p {
     font-family: $Font_text;
     color: $color_Kasa;
 }

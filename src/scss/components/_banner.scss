@@ -1,16 +1,27 @@
 .banner {
     position: relative;
 
-    .bannerBg {
+
+    .bannerBgHome {
+        background-image: url("./imgs/IMG_Banner_Home.jpg");
+    }
+
+    .bannerBgAbout {
+        background-image: url("./imgs/IMG_Banner_About.jpg");
+    }
+
+    .bannerBgHome,
+    .bannerBgAbout {
         border-radius: 1.5rem;
         height: 14rem;
         width: 100%;
-        background-image: url("./imgs/IMG_Home.jpg");
         background-position: center;
         background-size: cover;
 
         filter: brightness(70%);
     }
+
+
 
     h2 {
         width: max-content;

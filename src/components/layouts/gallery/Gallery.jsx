@@ -1,15 +1,13 @@
 import { useState, useEffect } from "react";
 import CardRent from "./CardRent";
+import rentsJson from '../../../assets/rentsDB.json';
 
 const Gallery = () => {
     const [rents, setRents] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3000/rents").then((res) => res.json())
-            .then((res_json) => setRents(res_json))
+        setRents(rentsJson);
     }, []);
-
-    if (!rents) return <div>Loading...</div>;
 
     return (
         <ul className="gallery">

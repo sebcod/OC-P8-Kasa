@@ -3,6 +3,9 @@
 @import "./base/reset";
 @import "./base/typograpfy";
 
+@import "./components/collapse";
+@import "./components/banner";
+
 @import "./layouts/header/header";
 @import "./layouts/header/navbar";
 @import "./layouts/body";
@@ -12,5 +15,5 @@
 @import "./pages/home/gallery";
 @import "./pages/home/cardRent";
 @import "./pages/404/Notfound";
-
-@import "./components/banner";
+@import "./pages/about/about";
+@import "./pages/about/aboutCollapses";

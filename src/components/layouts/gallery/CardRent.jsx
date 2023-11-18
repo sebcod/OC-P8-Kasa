@@ -12,6 +12,7 @@ const CardRent = ({ rent }) => {
         //console.log(rent);
         // console.log(props);
     }, [])
+
     return (
         <li className="cardRent">
             <img src={rent.cover} alt="" />

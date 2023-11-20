@@ -1,0 +1,34 @@
+.slider {
+    width: 100%;
+    height: 17.5vw;
+    position: relative;
+    color: $color_text_white;
+
+    img {
+        border-radius: 1.5rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .nbrOfSlides {
+        position: absolute;
+        left: 50%;
+        bottom: 1rem;
+        transform: translateX(-50%);
+    }
+
+    .slider-arrow-left {
+        position: absolute;
+        left: 0.5rem;
+        top: 50%;
+        transform: rotate(90deg) scale(2) translateX(-25%);
+    }
+
+    .slider-arrow-right {
+        position: absolute;
+        right: 0.5rem;
+        top: 50%;
+        transform: rotate(-90deg) scale(2) translateX(25%);
+    }
+}

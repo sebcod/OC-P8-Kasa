@@ -1,20 +1,16 @@
-import { useState, useEffect } from "react";
-import CardRent from "./CardRent";
-import rentsJson from '../../../assets/rentsDB.json';
+import CardRent from "../../common/CardRent";
+import PropTypes from "prop-types";
 
-const Gallery = () => {
-    const [rents, setRents] = useState([]);
-
-    useEffect(() => {
-        setRents(rentsJson);
-    }, []);
+const Gallery = ({ rents }) => {
+    Gallery.propTypes = {
+        rents: PropTypes.array,
+    };
 
     return (
         <ul className="gallery">
             {rents.map((rent) => (
                 <CardRent key={rent.id} rent={rent} />
-            )
-            )}
+            ))}
         </ul>
     );
 };

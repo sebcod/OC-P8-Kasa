@@ -20,15 +20,19 @@
 
     .slider-arrow-left {
         position: absolute;
-        left: 0.5rem;
+        width: 2vw;
+        max-width: 3rem;
+        left: 1rem;
         top: 50%;
-        transform: rotate(90deg) scale(2) translateX(-25%);
+        transform: rotate(180deg) translateY(50%);
     }
 
     .slider-arrow-right {
         position: absolute;
-        right: 0.5rem;
+        width: 2vw;
+        max-width: 3rem;
+        right: 1rem;
         top: 50%;
-        transform: rotate(-90deg) scale(2) translateX(25%);
+        transform: translateY(-50%);
     }
 }

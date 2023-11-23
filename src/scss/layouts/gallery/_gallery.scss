@@ -2,11 +2,17 @@
     background: $color_bg_gallery;
     border-radius: 1.5rem;
     margin-top: 2rem;
-    //margin-bottom: 2rem;
     padding: 2rem;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    //grid-auto-rows: 400px;
     gap: 2rem;
+
+    @media screen and (max-width: $mediaQuery_mobile) {
+        grid-template-columns: 1fr;
+        background: none;
+        border-radius: none;
+        padding: 0;
+        gap: 1rem;
+    }
 }

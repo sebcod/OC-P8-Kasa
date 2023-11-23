@@ -1,9 +1,9 @@
-//import React from 'react';
+import logoKasaFooter from "../../../assets/logos/logo_kasa_footer.png";
 
 const Footer = () => {
     return (
         <div className="footer">
-            <img src="./logos/logo_kasa_footer.png" alt="logo kasa" />
+            <img src={logoKasaFooter} />
             <p>© 2020 Kasa. All rights reserved</p>
         </div>
     );

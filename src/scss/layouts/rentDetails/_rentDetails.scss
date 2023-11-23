@@ -1,3 +1,76 @@
-.rentdetails {
-    border: 1px solid red;
+.rentDetails {
+
+    .rentDetails_contents {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+
+        .rentDetails_contents_left {
+
+            .rentTitle {
+                color: $color_Kasa;
+                font-size: 2.25rem;
+                font-weight: 500;
+                line-height: 3.2rem;
+            }
+
+            .rentLocation {
+                color: $color_Kasa;
+                font-size: 1.125rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.60425rem;
+            }
+
+            .tags {
+                display: flex;
+                gap: 1rem;
+
+                .tag {
+                    min-width: 7.2rem;
+                    background-color: $color_Kasa;
+                    color: $color_text_white;
+                    padding: 0.5rem 2rem;
+                    border-radius: 0.8rem;
+                    //margin: 1rem 0;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        .rentDetails_contents_right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .host {
+                display: flex;
+                justify-content: right;
+                align-items: center;
+
+                .hostName {
+                    color: $color_Kasa;
+                    text-align: right;
+                    font-size: 1.125rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 1.60425rem;
+                    margin-right: 1rem;
+                }
+
+                .hostPicture {
+                    border-radius: 50%;
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+
+        }
+    }
+
+    .rentDetailsCollapses {
+        margin-top: 1.5rem;
+        display: flex;
+        gap: 4.75rem;
+    }
 }

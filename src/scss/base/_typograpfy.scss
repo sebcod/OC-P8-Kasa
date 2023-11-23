@@ -1,13 +1,15 @@
 // import google fonts
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Shrikhand&display=swap');
 
 // variables fonts
 $Font_logo_and_title: 'Shrikhand', serif;
 $Font_text: 'Inter', sans-serif;
 
+* {
+    font-family: $Font_text, sans-serif;
+}
+
 h1,
-h2,
-h3,
-p {
-    font-family: $Font_text;
+h2 {
+    font-family: $Font_logo_and_title;
 }

@@ -1,5 +1,12 @@
 body {
+    position: relative;
     background: $color_bg_main;
     max-width: 1440px;
     margin: auto;
+    // border: solid 1px red;
+    min-height: 100vh;
+}
+
+body {
+    //border: solid red;
 }

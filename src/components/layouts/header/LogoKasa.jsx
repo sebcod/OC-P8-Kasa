@@ -1,7 +1,8 @@
+import logoKasa from "../../../assets/logos/logo_Kasa.png"
 
 const LogoKasa = () => {
     return (
-        <div><img src="./logos/logo_Kasa.png" alt="Logo Kasa" /></div>
+        <div><img src={logoKasa} alt="Logo Kasa" /></div>
     );
 };
 

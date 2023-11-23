@@ -11,7 +11,7 @@ const CardRent = ({ rent }) => {
     return (
 
         <li className="cardRent">
-            <NavLink to={"/" + rent.id}>
+            <NavLink to={"/rent/" + rent.id}>
                 <img src={rent.cover} alt="" />
                 <h2>{rent.title}</h2>
             </NavLink>

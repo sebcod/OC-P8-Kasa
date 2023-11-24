@@ -1,5 +1,5 @@
 .notfound {
-    width: 90vw;
+    //width: 90vw;
     height: 70vh;
     margin-left: 1.25rem;
     margin-right: 1.25rem;
@@ -8,6 +8,7 @@
     align-items: center;
 
     .notFound-content {
+        margin: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;

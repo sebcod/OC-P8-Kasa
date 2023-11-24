@@ -4,4 +4,10 @@
     margin-right: 6rem;
     min-height: 100%;
     padding-bottom: 16rem;
+
+    @media screen and (max-width: $mediaQuery_laptop) {
+        margin-top: 3rem;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
 }

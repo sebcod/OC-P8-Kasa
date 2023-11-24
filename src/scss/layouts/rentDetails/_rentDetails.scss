@@ -5,13 +5,21 @@
         display: flex;
         justify-content: space-between;
 
+        @media screen and (max-width: $mediaQuery_laptop) {
+            flex-direction: column;
+        }
+
         .rentDetails_contents_left {
 
             .rentTitle {
                 color: $color_Kasa;
                 font-size: 2.25rem;
                 font-weight: 500;
-                line-height: 3.2rem;
+                letter-spacing: 0.5px;
+
+                @media screen and (max-width: $mediaQuery_laptop) {
+                    font-size: 1.25rem;
+                }
             }
 
             .rentLocation {
@@ -19,7 +27,10 @@
                 font-size: 1.125rem;
                 font-style: normal;
                 font-weight: 500;
-                line-height: 1.60425rem;
+
+                @media screen and (max-width: $mediaQuery_laptop) {
+                    font-size: 0.9rem;
+                }
             }
 
             .tags {
@@ -34,6 +45,20 @@
                     border-radius: 0.8rem;
                     text-align: center;
                     margin-top: 1rem;
+
+
+                    @media screen and (max-width: $mediaQuery_laptop) {
+                        font-size: 0.9rem;
+                        margin-top: 0.8rem;
+                        margin-right: 0.8rem;
+
+                    }
+                }
+
+                @media screen and (max-width: $mediaQuery_mobile) {
+                    flex-wrap: wrap;
+                    font-size: 0.8rem;
+                    gap: 0rem;
                 }
             }
         }
@@ -42,6 +67,12 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @media screen and (max-width: $mediaQuery_laptop) {
+                flex-direction: row-reverse;
+                margin-top: 1.25rem;
+                align-items: center;
+            }
 
             .host {
                 display: flex;
@@ -56,6 +87,10 @@
                     font-weight: 500;
                     line-height: 1.60425rem;
                     margin-right: 1rem;
+
+                    @media screen and (max-width: $mediaQuery_laptop) {
+                        font-size: 0.9rem;
+                    }
                 }
 
                 .hostPicture {
@@ -63,8 +98,18 @@
                     width: 4rem;
                     height: 4rem;
                 }
+
             }
 
+            .rating {
+                width: max-content;
+
+                @media screen and (max-width: $mediaQuery_mobile) {
+                    img {
+                        width: 1.5rem;
+                    }
+                }
+            }
         }
     }
 
@@ -72,5 +117,10 @@
         margin-top: 1.5rem;
         display: flex;
         gap: 4.75rem;
+
+        @media screen and (max-width: $mediaQuery_laptop) {
+            flex-direction: column;
+            gap: 1.25rem;
+        }
     }
 }

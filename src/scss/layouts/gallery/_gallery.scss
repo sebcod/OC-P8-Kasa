@@ -8,6 +8,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 
+    @media screen and (max-width: $mediaQuery_laptop) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     @media screen and (max-width: $mediaQuery_mobile) {
         grid-template-columns: 1fr;
         background: none;

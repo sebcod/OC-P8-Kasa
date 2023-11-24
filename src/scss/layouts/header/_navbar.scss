@@ -1,9 +1,17 @@
 .navbar {
-    //border: 1px solid red;
     display: flex;
     gap: 3rem;
     font-size: 1.5rem;
     color: $color_Kasa;
+
+    @media screen and (max-width: $mediaQuery_laptop) {
+        gap: 1rem;
+    }
+
+    @media screen and (max-width: $mediaQuery_mobile) {
+        font-size: 1.2rem;
+    }
+
 }
 
 .navbarLinkActive {

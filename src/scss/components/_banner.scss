@@ -27,9 +27,13 @@
         transform: translate(-50%, -50%);
         display: flex;
 
-        @media screen and (max-width: $mediaQuery_mobile) {
+        @media screen and (max-width: $mediaQuery_laptop) {
             flex-direction: column;
             left: 14rem;
+        }
+
+        @media screen and (max-width: $mediaQuery_mobile) {
+            left: 9rem;
         }
 
         h2 {
@@ -37,13 +41,18 @@
             font-size: 3rem;
             font-weight: 400;
 
-            @media screen and (max-width: $mediaQuery_mobile) {
+            @media screen and (max-width: $mediaQuery_laptop) {
                 font-size: 2.5rem;
+            }
+
+            @media screen and (max-width: $mediaQuery_mobile) {
+                font-size: 1.6rem;
+
             }
         }
     }
 
-    @media screen and (max-width: $mediaQuery_mobile) {
+    @media screen and (max-width: $mediaQuery_laptop) {
 
         .bannerBgHome,
         .bannerBgAbout {

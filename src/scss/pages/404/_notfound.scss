@@ -1,22 +1,36 @@
 .notfound {
+    width: 90vw;
+    height: 70vh;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8rem;
-    color: $color_Kasa;
 
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    .notFound-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 6rem;
+        color: $color_Kasa;
 
+        h1 {
+            font-size: 18rem;
+            font-family: $Font_text;
 
-    h1 {
-        font-size: 18rem;
-        font-family: $Font_text;
-    }
+            @media screen and (max-width: $mediaQuery_laptop) {
+                font-size: 8rem;
+            }
+        }
 
-    h2 {
-        font-family: $Font_text;
-        font-size: 2rem;
+        h2 {
+            font-family: $Font_text;
+            font-size: 2rem;
+
+            @media screen and (max-width: $mediaQuery_laptop) {
+                font-size: 1.5rem;
+            }
+        }
     }
 }

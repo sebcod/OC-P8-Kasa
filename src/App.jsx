@@ -15,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/rent/:paramsRentId" element={<Rent />} />
         <Route path="/About" element={<About />} />
+        <Route path="/notFound" element={<NotFound />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer />

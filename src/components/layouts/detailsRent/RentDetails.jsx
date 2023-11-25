@@ -5,6 +5,7 @@ import svgStar from "../../../assets/imgs/star.svg";
 import svgStarGrey from "../../../assets/imgs/starGrey.svg";
 import Collapse from "../../common/Collapse";
 
+
 const RentDetails = ({ rent }) => {
     const nbrStars = 5;
     const [rating, setRating] = useState(0);
@@ -15,7 +16,6 @@ const RentDetails = ({ rent }) => {
 
     useEffect(() => {
         setRating(rent.rating);
-
     }, [rent]);
 
     return (

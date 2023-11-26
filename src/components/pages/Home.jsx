@@ -2,15 +2,17 @@
 import { useEffect, useState } from 'react'
 import Banner from "../common/Banner";
 import Gallery from "../layouts/gallery/Gallery";
-import rentsJson from '../../assets/rentsDB.json';
 
 const Home = () => {
   const [rents, setRents] = useState([]);
 
   useEffect(() => {
-    setRents(rentsJson);
-
-  }, [rents]);
+    fetch("../src/assets/rentsDB.json")
+      .then((res) => res.json())
+      .then((resJson) => {
+        setRents(resJson);
+      });
+  }, []);
 
   return (
     <div className="home">

@@ -1,4 +1,6 @@
 
+// Logo Kasa avec la gestion du responsive
+
 const LogoKasa = () => {
     return (
         <picture>

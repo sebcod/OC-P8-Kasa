@@ -3,6 +3,11 @@ import { useEffect, useState } from 'react'
 import Banner from "../common/Banner";
 import Gallery from "../layouts/gallery/Gallery";
 
+// Page Home
+// Récupération des location depuis rentsDB.json
+// Appel des composants Banner et Gallery
+
+
 const Home = () => {
   const [rents, setRents] = useState([]);
 

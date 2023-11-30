@@ -1,6 +1,10 @@
 import Banner from "../common/Banner";
 import Collapse from "../common/Collapse";
 
+// Page About
+// Appel du composant Banner
+// Appel de quatres composants Collapse.
+
 const About = () => {
     return (
         <div className="about">

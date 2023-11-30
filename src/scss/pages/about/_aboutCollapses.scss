@@ -4,10 +4,6 @@
     display: flex;
     flex-direction: column;
     gap: 1.75rem;
-    width: 64rem;
     margin: auto;
-
-    @media screen and (max-width: $mediaQuery_laptop) {
-        width: 100%;
-    }
+    width: 100%;
 }

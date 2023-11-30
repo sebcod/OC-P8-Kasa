@@ -35,30 +35,21 @@
 
             .tags {
                 display: flex;
-                gap: 1rem;
+                flex-wrap: wrap;
 
                 .tag {
-                    min-width: 7.2rem;
+                    min-width: fit-content;
                     background-color: $color_Kasa;
                     color: $color_text_white;
                     padding: 0.5rem 2rem;
                     border-radius: 0.8rem;
                     text-align: center;
-                    margin-top: 1rem;
-
+                    margin-top: 0.8rem;
+                    margin-right: 0.8rem;
 
                     @media screen and (max-width: $mediaQuery_laptop) {
-                        font-size: 0.9rem;
-                        margin-top: 0.8rem;
-                        margin-right: 0.8rem;
-
+                        font-size: 0.8rem;
                     }
-                }
-
-                @media screen and (max-width: $mediaQuery_mobile) {
-                    flex-wrap: wrap;
-                    font-size: 0.8rem;
-                    gap: 0rem;
                 }
             }
         }

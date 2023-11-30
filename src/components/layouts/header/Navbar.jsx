@@ -1,5 +1,7 @@
-//import React from 'react';
 import { NavLink } from "react-router-dom";
+
+// création des liens vers les pages home et about
+// ajout de textDecoration: "underline" si le lien est actif
 
 const Navbar = () => {
     return (

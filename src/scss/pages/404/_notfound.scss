@@ -1,14 +1,16 @@
 .notfound {
-    //width: 90vw;
-    height: 70vh;
+    height: fit-content;
     margin-left: 1.25rem;
     margin-right: 1.25rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-bottom: 16rem;
+    padding-top: 2rem;
+
 
     .notFound-content {
-        margin: auto;
+        height: fit-content;
+        margin-bottom: 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -18,7 +20,7 @@
 
         h1 {
             font-size: 18rem;
-            font-family: $Font_text;
+            font-family: $font-main;
 
             @media screen and (max-width: $mediaQuery_laptop) {
                 font-size: 8rem;
@@ -26,7 +28,7 @@
         }
 
         h2 {
-            font-family: $Font_text;
+            font-family: $font-main;
             font-size: 2rem;
 
             @media screen and (max-width: $mediaQuery_laptop) {

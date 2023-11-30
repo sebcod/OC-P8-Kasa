@@ -1,5 +1,14 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
+import arrowLeft from "../../assets/imgs/arrowLeft.svg";
+import arrowRight from "../../assets/imgs/arrowRight.svg";
+
+// Slider d'images de la lacation.
+// Récupération en props du tableau pictures.
+// création d'un compteur de slides.
+// déclaration de deux fonctions pour le changement d'image avec gestion du débordement de tableau.
+// Affichage de l'image courante.
+// affichage de sa position dans le tableau et des flèches si pictures > 1.
 
 const Slider = ({ pictures }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -9,62 +18,42 @@ const Slider = ({ pictures }) => {
     };
 
     const slideLeft = () => {
-        setCurrentSlide((curr) => {
-            return curr - 1 < 0 ? pictures.length - 1 : curr - 1;
-        });
+        setCurrentSlide(
+            currentSlide - 1 < 0 ? pictures.length - 1 : currentSlide - 1
+        );
     };
     const slideRight = () => {
-        setCurrentSlide((curr) => {
-            return curr + 1 > pictures.length - 1 ? 0 : curr + 1;
-        });
+        setCurrentSlide(
+            currentSlide + 1 > pictures.length - 1 ? 0 : currentSlide + 1
+        );
     };
 
-    if (pictures != undefined) {
-        return (
-            <div className="slider">
-                <img src={pictures[currentSlide]} alt="" />
-                {pictures.length > 1 && (
-                    <div className="nbrOfSlides">
-                        {currentSlide + 1}/{pictures.length}
-                    </div>
-                )}
-
-                {pictures.length > 1 && (
-                    <svg
-                        onClick={slideLeft}
-                        className="slider-arrow-left"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="48"
-                        height="80"
-                        viewBox="0 0 48 80"
-                        fill="none"
-                    >
-                        <path
-                            d="M0.960022 72.3458L8.04002 79.4258L47.64 39.8258L8.04002 0.22583L0.960022 7.30583L33.48 39.8258L0.960022 72.3458Z"
-                            fill="white"
-                        />
-                    </svg>
-                )}
-
-                {pictures.length > 1 && (
-                    <svg
-                        onClick={slideRight}
-                        className="slider-arrow-right"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="48"
-                        height="80"
-                        viewBox="0 0 48 80"
-                        fill="none"
-                    >
-                        <path
-                            d="M0.960022 72.3458L8.04002 79.4258L47.64 39.8258L8.04002 0.22583L0.960022 7.30583L33.48 39.8258L0.960022 72.3458Z"
-                            fill="white"
-                        />
-                    </svg>
-                )}
-            </div>
-        );
-    }
+    return (
+        <div className="slider">
+            <img src={pictures[currentSlide]} alt="" />
+            {pictures.length > 1 && (
+                <div className="nbrOfSlides">
+                    {currentSlide + 1}/{pictures.length}
+                </div>
+            )}
+            {pictures.length > 1 && (
+                <img
+                    src={arrowLeft}
+                    alt="slider arrow left"
+                    className="slider-arrow-left"
+                    onClick={slideLeft}
+                />
+            )}
+            {pictures.length > 1 && (
+                <img
+                    src={arrowRight}
+                    alt="slider arrow right"
+                    className="slider-arrow-right"
+                    onClick={slideRight}
+                />
+            )}
+        </div>
+    );
 };
 
 export default Slider;

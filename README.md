@@ -1,3 +1,5 @@
-start Vite : `npm run dev`
+#OC-P8-Kasa
 
-Start backend : `npm run server`
+##Install: `npm install`
+
+##start Vite : `npm run dev`

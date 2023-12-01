@@ -1,5 +1,5 @@
-#OC-P8-Kasa
+# OC-P8-Kasa
 
-##Install: `npm install`
+### Install: `npm install`
 
-##start Vite : `npm run dev`
+### start Vite : `npm run dev`

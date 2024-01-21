@@ -3,7 +3,7 @@ import Collapse from "../common/Collapse";
 
 // Page About
 // Appel du composant Banner
-// Appel de quatres composants Collapse.
+// Appel de quatre composants Collapse.
 
 const About = () => {
     return (

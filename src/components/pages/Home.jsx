@@ -4,7 +4,7 @@ import Banner from "../common/Banner";
 import Gallery from "../layouts/gallery/Gallery";
 
 // Page Home
-// Récupération des location depuis rentsDB.json
+// Récupération des locations depuis rentsDB.json
 // Appel des composants Banner et Gallery
 
 

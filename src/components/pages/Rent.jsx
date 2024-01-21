@@ -19,12 +19,10 @@ const Rent = () => {
             .then((resJson) => {
                 let found = false;
                 resJson.map((rentfound, index) => {
-
                     if (rentfound.id === paramsRentId) {
                         setRent(rentfound);
                         found = true;
                     }
-
                     if (index === resJson.length - 1 & !found) {
                         navigate("/notFound");
                     }
